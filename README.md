@@ -12,7 +12,6 @@
 ## 项目结构
 ```
 ├── README.md
-├── scripts # 运行脚本
 ├── pytorch-CycleGAN-and-pix2pix # Pix2Pix
 │   ├── datasets
 │   ├── ...
@@ -22,11 +21,14 @@
 ├── metrics.py # 评价指标
 ```
 
+## 基础版-CycleGAN
+> !TODO: 补充原理
+
 ## 基础版-Pix2Pix
-> !TODO
+> !TODO: 补充原理
 
 ## 进阶版-UGATIT
-> !TODO
+> !TODO: 补充原理
 
 
 ## 评价指标
@@ -47,8 +49,8 @@
 | <img src="./imgs/original/403.png" style="zoom: 50%; " /> | <img src="./imgs/pix2pix/403.png" style="zoom: 50%; " /> | <img src="./imgs/ugatit/403.png" style="zoom: 50%; " /> | <img src="./imgs/cyclegan/403.png" style="zoom: 50%; " /> | <img src="./imgs/reference/403.png" style="zoom: 50%; " /> |
 
 ## 参考资料
-1. Pix2Pix：《Image-to-image translation with conditional adversarial networks》
-2. U-GAT-IT：《U-GAT-IT: UNSUPERVISED GENERATIVE ATTENTIONAL NETWORKS WITH ADAPTIVE LAYER- INSTANCE NORMALIZATION FOR IMAGE-TO-IMAGE
-TRANSLATION》
-3. Github Official Code：[pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
-4. Github Official Code：[UGATIT](https://github.com/znxlwm/UGATIT-pytorch)
+- [1] [Image-to-image translation with conditional adversarial networks](https://arxiv.org/abs/1611.07004)
+- [2] [U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation](https://arxiv.org/abs/1907.10830)
+- [3] [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593)
+- [4] Github Official Code：[Pix2Pix&CyleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+- [5] Github Official Code：[U-GAT-IT](https://github.com/znxlwm/UGATIT-pytorch)
