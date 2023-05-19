@@ -19,14 +19,8 @@
 ├── UGATIT-pytorch # UGATIT
 │   ├── datasets
 │   ├── ...
-├── utils # 评价指标
-│   ├── FID.py
-│   ├── LPIPS.py
 ├── metrics.py # 评价指标
 ```
-
-## 运行
-利用`Scripts`中的脚本进行快速运行
 
 ## 基础版-Pix2Pix
 > !TODO
@@ -37,12 +31,20 @@
 
 ## 评价指标
 实验指标选取FID和LPIPS，FID用于衡量生成图像与真实图像的相似度，LPIPS用于衡量生成图像与风格图像的相似度。
-### FID
-
-### LPIPS
+| 模型 | FID $\downarrow$ | LPIPS $\downarrow$ | MS-SSIM $\uparrow$ |
+| :----: | :----: | :----: | :----: |
+| **CycleGAN** | 98.01 | 0.2939 | **0.9051** |
+| **U-GAT-IT** | 103.00 | 0.3372 | 0.8562 |
+| **Pix2Pix** | **85.16** | **0.2414** | 0.8711 |
 
 ## 实验结果
-### 实验参数
+不同模型的结果对比如下图所示
+| 原图 | Pix2Pix | U-GAT-IT | CycleGAN | Reference |
+| :----: | :----: | :----: | :----: | :----: |
+| <img src="./imgs/original/400.png" style="zoom: 50%; " /> | <img src="./imgs/pix2pix/400.png" style="zoom: 50%; " /> | <img src="./imgs/ugatit/400.png" style="zoom: 50%; " /> | <img src="./imgs/cyclegan/400.png" style="zoom: 50%; " /> | <img src="./imgs/reference/400.png" style="zoom: 50%; " /> |
+| <img src="./imgs/original/401.png" style="zoom: 50%; " /> | <img src="./imgs/pix2pix/401.png" style="zoom: 50%; " /> | <img src="./imgs/ugatit/401.png" style="zoom: 50%; " /> | <img src="./imgs/cyclegan/401.png" style="zoom: 50%; " /> | <img src="./imgs/reference/401.png" style="zoom: 50%; " /> |
+| <img src="./imgs/original/402.png" style="zoom: 50%; " /> | <img src="./imgs/pix2pix/402.png" style="zoom: 50%; " /> | <img src="./imgs/ugatit/402.png" style="zoom: 50%; " /> | <img src="./imgs/cyclegan/402.png" style="zoom: 50%; " /> | <img src="./imgs/reference/402.png" style="zoom: 50%; " /> |
+| <img src="./imgs/original/403.png" style="zoom: 50%; " /> | <img src="./imgs/pix2pix/403.png" style="zoom: 50%; " /> | <img src="./imgs/ugatit/403.png" style="zoom: 50%; " /> | <img src="./imgs/cyclegan/403.png" style="zoom: 50%; " /> | <img src="./imgs/reference/403.png" style="zoom: 50%; " /> |
 
 ## 参考资料
 1. Pix2Pix：《Image-to-image translation with conditional adversarial networks》

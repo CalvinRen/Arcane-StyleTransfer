@@ -55,12 +55,7 @@ def main():
         corrected = plt.imread(result_path)
         reference = plt.imread(reference_path)
 
-        print('file name is:', file)
-
         ms_ssim, lpips = rmetrics(corrected, reference)
-        
-        print('SSIM', ms_ssim)
-        print('LPIPS:', lpips)
 
         sumssim += ms_ssim
         sumlpips += lpips
