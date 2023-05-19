@@ -43,9 +43,9 @@
 
 | 模型 | FID $\downarrow$ | LPIPS $\downarrow$ | MS-SSIM $\uparrow$ |
 | :----: | :----: | :----: | :----: |
-| **CycleGAN** | 98.01 | 0.2939 | **0.9051** |
-| **U-GAT-IT** | 103.00 | 0.3372 | 0.8562 |
-| **Pix2Pix** | **85.16** | **0.2414** | 0.8711 |
+| CycleGAN | 98.01 | 0.2939 | **0.9051** |
+| U-GAT-IT | 103.00 | 0.3372 | 0.8562 |
+| Pix2Pix | **85.16** | **0.2414** | 0.8711 |
 
 ## 实验结果
 不同模型的结果对比如下图所示
@@ -62,3 +62,10 @@
 - [3] [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593)
 - [4] Github Official Code：[Pix2Pix&CyleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 - [5] Github Official Code：[U-GAT-IT](https://github.com/znxlwm/UGATIT-pytorch)
+
+<style>
+table
+{
+    margin: auto;
+}
+</style>
