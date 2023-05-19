@@ -31,8 +31,11 @@
 ## 进阶版-UGATIT
 > !TODO: 补充原理
 
+## 实验结果
+### 实验环境
+本次实验使用单块Telsa T4 GPU进行训练，实验框架使用PyTorch
 
-## 评价指标
+### 评价指标
 实验中使用了三个评价指标，分别是**FID**、**LPIPS**和**MS-SSIM**。其中FID和LPIPS越小越好，MS-SSIM越大越好。
 
 **FID**为*Fréchet Inception Distance*的缩写，是一种用于评估图像生成模型的指标。它是基于Inception-v3模型提取的特征来计算的，可以用来衡量生成图像与真实图像之间的相似度。FID越小，说明生成图像与真实图像越相似。
@@ -46,8 +49,9 @@
 | CycleGAN | 98.01 | 0.2939 | **0.9051** |
 | U-GAT-IT | 103.00 | 0.3372 | 0.8562 |
 | Pix2Pix | **85.16** | **0.2414** | 0.8711 |
+| <u>**Reference**</u> | <u>86.19</u> | <u>0.2328</u> | <u>0.8681</u> |
 
-## 实验结果
+### 部分结果
 不同模型的结果对比如下图所示
 | 原图 | Pix2Pix | U-GAT-IT | CycleGAN | Reference |
 | :----: | :----: | :----: | :----: | :----: |
@@ -62,10 +66,3 @@
 - [3] [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593)
 - [4] Github Official Code：[Pix2Pix&CyleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 - [5] Github Official Code：[U-GAT-IT](https://github.com/znxlwm/UGATIT-pytorch)
-
-<style>
-table
-{
-    margin: auto;
-}
-</style>
