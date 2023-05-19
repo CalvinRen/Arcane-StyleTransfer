@@ -11,8 +11,9 @@
 
 ## 项目结构
 ```
+├── imgs # 实验结果
 ├── README.md
-├── pytorch-CycleGAN-and-pix2pix # Pix2Pix
+├── pytorch-CycleGAN-and-pix2pix # Pix2Pix&CyleGAN
 │   ├── datasets
 │   ├── ...
 ├── UGATIT-pytorch # UGATIT
@@ -32,7 +33,14 @@
 
 
 ## 评价指标
-实验指标选取FID和LPIPS，FID用于衡量生成图像与真实图像的相似度，LPIPS用于衡量生成图像与风格图像的相似度。
+实验中使用了三个评价指标，分别是**FID**、**LPIPS**和**MS-SSIM**。其中FID和LPIPS越小越好，MS-SSIM越大越好。
+
+**FID**为*Fréchet Inception Distance*的缩写，是一种用于评估图像生成模型的指标。它是基于Inception-v3模型提取的特征来计算的，可以用来衡量生成图像与真实图像之间的相似度。FID越小，说明生成图像与真实图像越相似。
+
+**LPIPS**为*Learned Perceptual Image Patch Similarity*的缩写，是一种用于评估图像生成模型的指标。它是基于VGG-16模型提取的特征来计算的，可以用来衡量生成图像与真实图像之间的相似度。LPIPS越小，说明生成图像与真实图像越相似。
+
+**MS-SSIM**为*Multi-Scale Structural Similarity*的缩写，是一种用于评估图像生成模型的指标。它是基于人眼视觉系统的特性来计算的，可以用来衡量生成图像与真实图像之间的相似度。MS-SSIM越大，说明生成图像与真实图像越相似。
+
 | 模型 | FID $\downarrow$ | LPIPS $\downarrow$ | MS-SSIM $\uparrow$ |
 | :----: | :----: | :----: | :----: |
 | **CycleGAN** | 98.01 | 0.2939 | **0.9051** |
